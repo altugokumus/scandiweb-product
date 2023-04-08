@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  padding: 10px 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  margin-bottom: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+  margin-left: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-container{
+  float: left;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 1px black;
+  background-color: rgb(255, 236, 213);
+}
+
+.card-container:hover{
+  box-shadow: 0 0 10px 1px black;
+}
+
+.product-card{
+  padding: 10px;
+  width: 225px;
+  height: 250px;
+  overflow-y: auto;
+}
+
+.item-info{
+  position: relative;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+#sku, #name, #price, #productType, #size-section{
+  margin-bottom: 20px;
+  display: flex;
+  width: 20%;
+}
+
+#size-kg, #size-mb{
+  width: 100%;
+}
+
+#size-section{
+  margin-top: 25px;
+}
+
+#save-btn, #add-btn{
+  position: absolute;
+  right: 220px;
+  top: 10px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#cancel-btn, #delete-btn{
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.footer{
+  width: 80%;
+  height: 50px;
+  padding: 15px 0;
+  border-top: 1px solid black;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
